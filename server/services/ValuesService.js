@@ -5,6 +5,7 @@ class ValuesService {
   async find(query = {}) {
     const values = await dbContext.Values.find(query)
     return values
+    console.log('hi!');
   }
 
   async findById(id) {
